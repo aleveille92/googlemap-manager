@@ -34,8 +34,8 @@ var newMap = new GoogleMapManager('myCustomMap', {
 | `googleMap` | object | Support all the same options as a normal google map. |
 | `markers` | object | An object regrouping all the below settings. |
 | `markers.closeOthers` | boolean<br/>Default:**true** | Determine if all other markers should close when a new one is opened. |
-| `markers.cluster` | object | When use enable the *markerclusterer.js* extension. Support all the options of the plugin. |
-| `markers.infoBubble` | object | When use enable the *infobubble.js* extension. Support all the options of the plugin. |
+| `markers.cluster` | object | When use enable the [markerclusterer.js](https://github.com/googlemaps/js-marker-clusterer) extension. Support all the options of the plugin. |
+| `markers.infoBubble` | object | When use enable the [infobubble.js](https://github.com/googlemaps/js-info-bubble) extension. Support all the options of the plugin. |
 | `styles` | object | An object representing the colors and elements to show on the map. Can be generated online on a site like [Snazzy Maps](https://snazzymaps.com/). |
 
 ## Methods
