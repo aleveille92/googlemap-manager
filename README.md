@@ -33,7 +33,7 @@ var newMap = new GoogleMapManager('myCustomMap', {
 | --- | --- | --- |
 | `googleMap` | object | Support all the same options as a normal google map. |
 | `markers` | object | An object regrouping all the below settings. |
-| `markers.closeOthers` | boolean<br/>Default **true** | Determine if all other markers should close when a new one is opened. |
+| `markers.closeOthers` | boolean<br/>Default:**true** | Determine if all other markers should close when a new one is opened. |
 | `markers.cluster` | object | When use enable the *markerclusterer.js* extension. Support all the options of the plugin. |
 | `markers.infoBubble` | object | When use enable the *infobubble.js* extension. Support all the options of the plugin. |
 | `styles` | object | An object representing the colors and elements to show on the map. Can be generated online on a site like [Snazzy Maps](https://snazzymaps.com/). |
@@ -46,7 +46,7 @@ newMap.addMarker({
     lat: 45,
     lng: -73,
     template: "<div>Content of the infowindow...</div>",
-    categories: markers[i][2]
+    categories: ["sushi"]
 });
 ```
 | Name | Options | Description |
@@ -55,7 +55,7 @@ newMap.addMarker({
 | `zoomIn` | number<br/>*optional* | Increase the zoom by the amount specified. |
 | `zoomOut` | number<br/>*optional* | Decrease the zoom by the amount specified. |
 | `boundZoom` | - | Set the zoom of the map so that all markers fit in the view. |
-| `addMarker` | `id:number`<br/>`title:string`<br/>`lat:number`<br/>`lng:number`<br/>`icon:path`<br/>`template:number`<br/>`categories:number` | Add a marker to the map. If no template is passed the title will be used. |
+| `addMarker` | `id:number`<br/>`title:string`<br/>`lat:number`<br/>`lng:number`<br/>`icon:path`<br/>`template:string`<br/>`categories:array` | Add a marker to the map. If no template is passed the title will be used. |
 | `getMarker` | id | Retrieve a marker by ID. |
 | `showMarker` | id *or* marker | Make the marker visible on the map. |
 | `hideMarker` | id *or* marker | Make the marker invisible on the map. |
